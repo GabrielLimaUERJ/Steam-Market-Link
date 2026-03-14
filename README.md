@@ -1,6 +1,6 @@
 # Steam Market Price Checker
 
-Aplicação em Python que consulta automaticamente preços de itens do Steam Market a partir de links de listagem, permitindo análise rápida de mercado.
+Aplicação em Python que consulta preços de itens do Steam Market a partir de links de listagem, permitindo análise rápida de mercado.
 
 ## Tecnologias
 
