@@ -74,7 +74,6 @@ if st.button("Analisar"):
 
         st.subheader("Tabela de análise")
 
-<<<<<<< HEAD
         st.dataframe(df[["Item", "Preço atual", "Preço mediano", "Volume 24h", "Variação %"]])
 
         st.subheader("Variação de preço em relação à mediana")
@@ -94,4 +93,3 @@ if st.button("Analisar"):
         plt.xticks(rotation=45)
 
         st.pyplot(fig)
-=======
