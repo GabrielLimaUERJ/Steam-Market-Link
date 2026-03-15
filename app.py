@@ -95,25 +95,3 @@ if st.button("Analisar"):
 
         st.pyplot(fig)
 =======
-        st.dataframe(df[["Item","Preço atual","Preço mediano","Volume 24h","Variação %"]])
-
-        st.subheader("Comparação de preços")
-
-        fig, ax = plt.subplots()
-
-        ax.bar(df["Item"], df["Preço atual num"])
-
-        ax.set_title("Preço atual dos itens")
-
-        ax.set_ylabel("Preço")
-
-        plt.xticks(rotation=45)
-
-        st.pyplot(fig)
-
-        st.subheader("Ranking de oportunidade")
-
-        df_ordenado = df.sort_values("Variação %")
-
-        st.dataframe(df_ordenado[["Item","Preço atual","Preço mediano","Variação %"]])
->>>>>>> a558bb62c493a652bdba69de050d2da84165e857
