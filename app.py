@@ -78,18 +78,18 @@ if st.button("Analisar"):
 
         st.subheader("Variação de preço em relação à mediana")
 
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize=(10,6))
 
         cores = ["green" if x > 0 else "red" for x in df["Variação %"]]
 
         ax.bar(df["Item"], df["Variação %"], color=cores)
 
         ax.set_title("Variação percentual do preço")
-
         ax.set_ylabel("Variação (%)")
 
         ax.axhline(0)
 
-        plt.xticks(rotation=45)
+        plt.xticks(rotation=90)
+        plt.tight_layout()
 
         st.pyplot(fig)
