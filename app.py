@@ -74,6 +74,27 @@ if st.button("Analisar"):
 
         st.subheader("Tabela de análise")
 
+<<<<<<< HEAD
+        st.dataframe(df[["Item", "Preço atual", "Preço mediano", "Volume 24h", "Variação %"]])
+
+        st.subheader("Variação de preço em relação à mediana")
+
+        fig, ax = plt.subplots()
+
+        cores = ["green" if x > 0 else "red" for x in df["Variação %"]]
+
+        ax.bar(df["Item"], df["Variação %"], color=cores)
+
+        ax.set_title("Variação percentual do preço")
+
+        ax.set_ylabel("Variação (%)")
+
+        ax.axhline(0)
+
+        plt.xticks(rotation=45)
+
+        st.pyplot(fig)
+=======
         st.dataframe(df[["Item","Preço atual","Preço mediano","Volume 24h","Variação %"]])
 
         st.subheader("Comparação de preços")
@@ -95,3 +116,4 @@ if st.button("Analisar"):
         df_ordenado = df.sort_values("Variação %")
 
         st.dataframe(df_ordenado[["Item","Preço atual","Preço mediano","Variação %"]])
+>>>>>>> a558bb62c493a652bdba69de050d2da84165e857
