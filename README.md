@@ -54,3 +54,5 @@ Permitir a análise rápida de itens do Steam Market a partir de links fornecido
 ```bash
 git clone https://github.com/GabrielLimaUERJ/Steam-Market-Link.git
 cd Steam-Market-Link
+pip install -r requirements.txt
+streamlit run app.py
